@@ -1,0 +1,57 @@
+.markdown-source-view {
+  span.cm-header {
+    font-weight: 300;
+    padding: 1.725 0 !important;
+  }
+
+  span.cm-header.cm-header-1 {
+    font-size: 2.4rem;
+    color: #52aa5e;
+    line-height: 4rem;
+  }
+  span.cm-header.cm-header-2 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  span.cm-header.cm-header-3 {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  span.cm-header.cm-header-4 {
+    font-size: 2rem;
+  }
+  span.cm-header.cm-header-5 {
+    font-weight: 800;
+    font-size: 2rem;
+  }
+  span.cm-header.cm-header-6 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  span.cm-link {
+    text-decoration: none !important;
+  }
+
+  div.hr.cm-line {
+    hr {
+      border: none;
+      text-align: center;
+      font-weight: 300;
+      margin: 2.4rem 0;
+      &::after {
+        content: "~";
+        text-align: center;
+        font-size: 3.6rem;
+      }
+    }
+  }
+
+  div.cm-line {
+    text-align: justify;
+    padding-bottom: 0.8375 !important;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    text-rendering: optimizeLegibility;
+  }
+}

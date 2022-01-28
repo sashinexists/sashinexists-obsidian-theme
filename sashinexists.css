@@ -1,0 +1,509 @@
+/*Fonts*/
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  /*
+  If the font isn't installed in the system, 
+  it will go down the list until it finds on that is.
+  */
+  --default-font: "Ubuntu", "Inter", sans-serif;
+  /*Note and Settings Text*/
+  --font-monospace: "Ubuntu Mono","Source Code Pro", monospace;
+  /*Code block text*/
+  /*
+  var(--variableName); is a variable,
+  so you can use what you set over and over without having
+  to rewrite it multiple times.
+  */
+}
+
+/*Dark Theme Variables*/
+.theme-dark {
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  /*Obsidian Title Bar Bg*/
+  --background-primary: #171717;
+  /*Note background*/
+  --background-primary-alt: #030303;
+  /*Note Title background active*/
+  --background-secondary: #030303;
+  /*Sidebar background*/
+  --background-secondary-alt: #171717;
+  /*Sidebar Title background*/
+  --background-modifier-border: #333;
+  /*Border outline of quotes, tables, line breaks*/
+  --text-normal: #aaaaaa;
+  /*Text body of note*/
+  --text-muted: #e9e9e9;
+  /*Text darker for sidebar, toggles, inactive, tags, etc*/
+  --text-accent: #52aa5e;
+  /*Links*/
+  --text-accent-hover: #a0d0a7;
+  /*Links hover*/
+  --text-faint: #666;
+  /*Link brackets color & Gutter Numbers*/
+  --text-highlight-bg: rgba(82, 170, 94, 0.2);
+  /*Search Matches*/
+  --text-highlight-bg-active: rgba(160, 208, 167, 0.2);
+  /*Active Search Match (Preview Mode)*/
+  --text-selection: rgba(170, 170, 170, 0.2);
+  /*Text Selections*/
+  --interactive-normal: #2a2a2a;
+  /*Button Color*/
+  --interactive-hover: #303030;
+  /*Button Hovered Color*/
+  --interactive-accent: #52aa5e;
+  /*Workspace Note Title Underline*/
+  --interactive-accent-hover: #a0d0a7;
+  /*Menu Button Hover*/
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  /*Scrollbar Gutter Background*/
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  /*Scrollbar Color*/
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  /*Scrollbar Dragged Color*/
+}
+
+.theme-light {
+  --background-primary: #ffffff;
+  /*Note background*/
+  --background-primary-alt: #f5f6f8;
+  /*Note Title background active*/
+  --background-secondary: #f2f3f5;
+  /*Sidebar background*/
+  --background-secondary-alt: #e3e5e8;
+  /*Sidebar Title background*/
+  --background-modifier-border: #ddd;
+  /*Border outline of quotes, tables, line breaks*/
+  --text-normal: #2e3338;
+  /*Text body of note*/
+  --text-muted: #888888;
+  /*Text darker for sidebar, toggles, inactive, tags, etc*/
+  --text-accent: #705dcf;
+  /*Links*/
+  --text-accent-hover: #7a6ae6;
+  /*Links hover*/
+  --text-faint: #999999;
+  /*Link brackets color*/
+  --text-highlight-bg: rgba(255, 255, 0, 0.4);
+  /*Search Matches*/
+  --text-highlight-bg-active:rgba(255, 128, 0, 0.4);
+  /*Active Search Match (Preview Mode)*/
+  --text-selection: rgba(23, 48, 77, 0.99);
+  /*Text Selections*/
+  --interactive-normal: #f2f3f5;
+  /*Button background Color*/
+  --interactive-hover:#e9e9e9;
+  /*Button Hovered Color*/
+  --interactive-accent: #7b6cd9;
+  /*Workspace Note Title Underline*/
+  --interactive-accent-hover: #8273e6;
+  /*Menu Button Hover*/
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  /*Scrollbar Gutter Background*/
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  /*Scrollbar Color*/
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  /*Scrollbar Dragged Color*/
+}
+
+/*Box Sizing Reset - this makes it easier to set any ::before and ::after pseudo-elements' dimensions,
+since it includes any border and padding into the height and width values you set.
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}*/
+/*----Startup Progress Bar Screen----*/
+/*Startup Progress Bar Window*/
+/*Startup Text*/
+/*Startup Progress Bar Background*/
+/*Startup Progress Bar Moving Line*/
+/*----Settings----*/
+/*All Popup Windows: Settings*/
+/*Command Palette & Quick Switcher*/
+/*The notifications in the top right*/
+/*Context Menu (Right CLick sth)*/
+/*Setting Dropdown*/
+/*Community Themes Browser*/
+/*Community Plugins Browser*/
+/*--Extras--*/
+/*Tooltip Popup*/
+/*----Workspace----*/
+/* ribbons, the thin vertical bars to the far left/right */
+/*Side Panels*/
+/*Side Panel: Icons*/
+/*--File Explorer--*/
+/*Nav Top: Create Note, Sort, Create Folder*/
+/*Folder*/
+/*Files*/
+/* (also applies to many plugins displaying file lists in the side bar) */
+/*Status Bar*/
+/*--Title Bar--*/
+/*Title Bar*/
+/*Navigation Button - Back */
+/*Navigation Button - Forward*/
+/*Window Control- Minimize*/
+/*Window Control- Minimize*/
+/*Window Control- Close*/
+/*Buttons*/
+/*Default Buttons*/
+/*Settings Buttons*/
+/*Warning Buttons*/
+/*--Workspace: Notes--*/
+/*Note Title Bar*/
+/*Inactive Note Titlebar*/
+/*Note Title Bar: Text*/
+/*Note Title Bar: Note Icon*/
+/*Note Title Bar: Settings Icons*/
+/*Active Note Titlebar*/
+/*Note Title Bar: Text*/
+/*Note Title Bar: Note Icon*/
+/*Note Title Bar: Settings Icons*/
+/*----Notes----*/
+/*Source Mode*/
+/*Source Mode*/
+/*Live Preview Mode*/
+/*Reading Mode*/
+/*--Emphasis--*/
+/*Bold*/
+/*Reading View*/
+/*Editing View*/
+/*Italic/Emphasis*/
+/*Reading View*/
+/*Editing View*/
+/*Highlight*/
+/*Reading View*/
+/*Editing View*/
+/*Editing View highlight symbols/syntax*/
+/*Strikethrough*/
+/*Editing View*/
+/*Reading View*/
+/*--Headers/Headings--*/
+/*Reading Mode*/
+/*Reading Mode*/
+/*Reading Mode*/
+/*Reading Mode*/
+/*Reading Mode*/
+/*Reading Mode*/
+/*Source Mode*/
+/*Source Mode*/
+/*Source Mode*/
+/*Source Mode*/
+/*Source Mode*/
+/*Source Mode*/
+/* applies to all source mode headings */
+/*--Horizontal Line--*/
+/*Reading Mode*/
+/*Source Mode*/
+/*Source Mode*/
+/*HR Line Text*/
+/*Source Mode*/
+/*--Comments--*/
+/* html comments and obsidian style comments */
+/*--Code--*/
+/*Inline Code*/
+/*Source Mode*/
+/*Reading Mode*/
+/*Codeblock (no language specified) */
+/*Reading Mode*/
+/*Source Mode*/
+/*Codeblock: Language Specified: ```js*/
+/*Reading Mode*/
+/*Reading Mode*/
+/*--Links--*/
+/*Source Mode*/
+/*Wiki Links*/
+/*Reading Mode*/
+/*Markdown Links*/
+/*Reading Mode*/
+/*Link to No Page*/
+/*Reading Mode*/
+/*--Lists--*/
+/*Source Mode*/
+/*List Bullet/Number/Formatting*/
+/*Reading Mode*/
+/*Source Mode*/
+/*Source Mode*/
+/*Bullet Lists*/
+/*Reading Mode*/
+/*Bullet List Text*/
+/*Reading Mode*/
+/*Bullet List Symbol*/
+/*Reading Mode*/
+/*Numbered Lists*/
+/*Reading Mode*/
+/*Numbered List Text*/
+/*Reading Mode*/
+/*Numbered List Number*/
+/*Reading Mode*/
+/*Checkbox List*/
+/*Reading Mode*/
+/*Reading Mode*/
+/*Checked Checkbox*/
+/*Reading Mode*/
+/*Reading Mode*/
+/*--Blockquotes--*/
+/*--Tables--*/
+/*Reading Mode*/
+/*Table Headers*/
+/*Reading Mode*/
+/*Table Column*/
+/*Reading Mode*/
+/*Table Row*/
+/*Reading Mode*/
+/*Source Mode*/
+/*--Tags--*/
+/*Reading Mode*/
+/*Source Mode*/
+/*--Frontmatter/Metadata/Yaml--*/
+/*Reading Mode*/
+/*Source Mode*/
+/*Frontmatter Tag*/
+/*Reading Mode*/
+/*--Embeds--*/
+/*Reading Mode*/
+/*Reading Mode*/
+/*Live Preview Mode*/
+/*Live Preview Mode*/
+/*File Embed*/
+/*Reading Mode*/
+/*Live Preview Mode*/
+/*Empty/No Embed Found*/
+/*Live Preview Mode*/
+/*Live Preview Mode*/
+/*Embed Titles*/
+/*Reading Mode*/
+/*Reading Mode*/
+/*Embed Link*/
+/*--Footnotes--*/
+/*Footnote link in note*/
+/*Reading View*/
+/*Reference Number in text*/
+/*Editing View*/
+/*Footnotes section at the bottom of the note*/
+/*Reading View*/
+/*Footnote back ref (arrow) at the bottom of the note*/
+/*Reading View*/
+/*--Graph--*/
+.graph-view.color-fill {
+  color: var(--text-muted);
+  /*color of nodes*/
+}
+
+.graph-view.color-fill-focused {
+  /*color of focused node/note*/
+  color: #ffdd00;
+}
+
+.theme-dark .graph-view.color-fill-tag {
+  /*light mode tag color*/
+  color: #704214;
+}
+
+.theme-light .graph-view.color-fill-tag {
+  /*dark mode tag color*/
+  color: #E0D3AF;
+}
+
+.theme-dark .graph-view.color-fill-attachment {
+  /*dark mode attachment color*/
+  color: #1a356b;
+}
+
+.theme-light .graph-view.color-fill-attachment {
+  /*light mode attachment color*/
+  color: #83D4F4;
+}
+
+.graph-view.color-fill-unresolved {
+  /*unresolved(not created yet) notes*/
+  color: var(--text-muted);
+  opacity: 0.4;
+}
+
+.graph-view.color-arrow {
+  /*arrow color*/
+  color: var(--text-normal);
+  opacity: 0.5;
+}
+
+.graph-view.color-circle {
+  /*focused node border color*/
+  color: var(--text-normal);
+}
+
+.graph-view.color-line {
+  /*link color*/
+  color: var(--background-modifier-border);
+}
+
+.graph-view.color-text {
+  /*text color*/
+  color: var(--text-normal);
+}
+
+.graph-view.color-fill-highlight {
+  /*focused node color*/
+  color: var(--interactive-accent);
+}
+
+.graph-view.color-line-highlight {
+  /*focused node connections*/
+  color: var(--interactive-accent);
+}
+
+/*Graph Menu*/
+.markdown-source-view span.cm-header {
+  font-weight: 300;
+  padding: 1.725 0 !important;
+}
+.markdown-source-view span.cm-header.cm-header-1 {
+  font-size: 2.4rem;
+  color: #52aa5e;
+  line-height: 4rem;
+}
+.markdown-source-view span.cm-header.cm-header-2 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+.markdown-source-view span.cm-header.cm-header-3 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+.markdown-source-view span.cm-header.cm-header-4 {
+  font-size: 2rem;
+}
+.markdown-source-view span.cm-header.cm-header-5 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+.markdown-source-view span.cm-header.cm-header-6 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.markdown-source-view span.cm-link {
+  text-decoration: none !important;
+}
+.markdown-source-view div.hr.cm-line hr {
+  border: none;
+  text-align: center;
+  font-weight: 300;
+  margin: 2.4rem 0;
+}
+.markdown-source-view div.hr.cm-line hr::after {
+  content: "~";
+  text-align: center;
+  font-size: 3.6rem;
+}
+.markdown-source-view div.cm-line {
+  text-align: justify;
+  padding-bottom: 0.8375 !important;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  text-rendering: optimizeLegibility;
+}
+
+.markdown-preview-view p {
+  display: block;
+  text-align: justify;
+  margin: 1.725rem 0 !important;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  text-rendering: optimizeLegibility;
+}
+.markdown-preview-view ol,
+.markdown-preview-view ul {
+  margin-left: 4rem;
+}
+.markdown-preview-view ol li,
+.markdown-preview-view ul li {
+  padding: 0.75rem 0;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  text-rendering: optimizeLegibility;
+}
+.markdown-preview-view .collapse-indicator {
+  color: #2c2c2c;
+}
+.markdown-preview-view blockquote {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.4rem;
+  font-weight: 300;
+  border: none;
+}
+.markdown-preview-view blockquote p {
+  font-size: inherit;
+  line-height: 3.6rem;
+}
+.markdown-preview-view blockquote p .longquote {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+.markdown-preview-view a.external-link, .markdown-preview-view a.internal-link {
+  color: #52aa5e;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.markdown-preview-view a.external-link:hover, .markdown-preview-view a.internal-link:hover {
+  color: #a0d0a7;
+}
+.markdown-preview-view h1 {
+  font-size: 2.4rem;
+  color: #52aa5e;
+  line-height: 4rem;
+  font-weight: 300;
+}
+.markdown-preview-view h2 {
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 300;
+}
+.markdown-preview-view h3 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: 300;
+}
+.markdown-preview-view h4 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.markdown-preview-view h5 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+.markdown-preview-view h6 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.markdown-preview-view span.cm-link {
+  text-decoration: none !important;
+}
+.markdown-preview-view hr {
+  border: none;
+  text-align: center;
+  font-weight: 300;
+  margin: 2.4rem 0;
+}
+.markdown-preview-view hr::after {
+  content: "~";
+  text-align: center;
+  font-size: 3.6rem;
+}
+.markdown-preview-view .markdown-preview-section h1, .markdown-preview-view .markdown-preview-section h2, .markdown-preview-view .markdown-preview-section h3, .markdown-preview-view .markdown-preview-section h4 {
+  border: none;
+  padding-left: 0 !important;
+}
+
+/*# sourceMappingURL=sashinexists.css.map */
